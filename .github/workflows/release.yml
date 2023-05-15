@@ -10,3 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo Release PR was merged
+      - uses: actions/checkout@v3
+      - run: cat RELEASES.md
+      - run: git log
